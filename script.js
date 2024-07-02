@@ -6,6 +6,11 @@ function calcularTabela() {
 
     resultado.innerHTML = "";
 
+    if (!operacao) {
+        resultado.innerHTML = "Opção inválida, escolha uma tabuada.";
+        return;
+    }
+
     for (let i = 1; i <= n2; i++) {
         let linha;
         switch (operacao) {
